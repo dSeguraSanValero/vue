@@ -1,9 +1,38 @@
 <template>
-    <p v-if="userData">¡Bienvenido {{ userData.name }}!</p>
 
-    <p v-if="userData">¡Tu Id es {{ userData.id }}!</p>
 
-    <v-btn variant="outlined" @click="verReservas()">Ver Reservas</v-btn>
+  <v-table theme="dark">
+    <thead>
+      <tr>
+        <th class="text-left">
+          Name
+        </th>
+        <th class="text-left">
+          Email
+        </th>
+        <th class="text-left">
+          Phone
+        </th>
+        <th class="text-left">
+          Identity number
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr
+        v-if="userData">
+        <td>{{ userData.name }}</td>
+        <td>{{ userData.email }}</td>
+        <td>{{ userData.phone }}</td>
+        <td>{{ userData.dni }}</td>
+      </tr>
+    </tbody>
+  </v-table>
+
+   
+    <div class="signInbtn">
+        <v-btn variant="outlined" @click="verReservas()">My Bookings</v-btn>
+    </div>
 
     <v-row>
         <v-col cols="12" md="6" v-for="booking in bookings" :key="booking.bookingId">

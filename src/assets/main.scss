@@ -3,6 +3,7 @@
 
 body {
     color: $primary-color;
+    font-family: $font
 }
 
 h1 {
@@ -11,8 +12,14 @@ h1 {
     padding: 20px;
 }
 
+h2{
+    color: $secondary-color;
+    font-size: 24px
+}
+
 .sign-in {
     @include center-text;
+    font-size: 24px;
 }
 
   
@@ -47,5 +54,34 @@ h1 {
     .mdi {
       margin-left: 5px;
     }
+
+    
 }
-  
+
+.v-row {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 1 auto;
+    margin: -12px;
+    text-align: center;
+    padding-top:40px;
+}
+.signInbtn{
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    padding-top: 20px;
+}
+.v-table__wrapper {
+    border-radius: inherit;
+    overflow: auto;
+    flex: 1 1 auto;
+    text-align: center;
+}
+
+.v-table > .v-table__wrapper > table > tbody > tr > th, .v-table > .v-table__wrapper > table > thead > tr > th, .v-table > .v-table__wrapper > table > tfoot > tr > th {
+    height: var(--v-table-header-height);
+    font-weight: 500;
+    user-select: none;
+    text-align: center !important;
+}

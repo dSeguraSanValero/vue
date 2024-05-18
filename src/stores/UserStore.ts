@@ -7,7 +7,7 @@ interface UserData {
   email: string;
   password: string;
   phone: string;
-  DNI: string;
+  dni: string;
   MyBookings: any[];
 }
 
