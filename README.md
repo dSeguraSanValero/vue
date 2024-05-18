@@ -1,45 +1,11 @@
-# flying_API
+Flying Free
 
-This template should help get you started developing with Vue 3 in Vite.
+La aplicación consiste en una web de gestión de 3 entidades (compañías, usuarios y reservas).
 
-## Recommended IDE Setup
+En primer lugar, se muestra una página principal (home), y desde la misma, podemos iniciar sesión como usuario para acceder a nuestra zona privada. 
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+También podemos desde la página home, acceder a la zona pública, para visualizar todas las compañías existentes, y sus datos. 
 
-## Type Support for `.vue` Imports in TS
+Por último, desde la zona privada de usuario, podemos visualizar nuestro vuelos reservados.
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
-
-## Project Setup
-
-```sh
-npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Type-Check, Compile and Minify for Production
-
-```sh
-npm run build
-```
-
-### Run Unit Tests with [Vitest](https://vitest.dev/)
-
-```sh
-npm run test:unit
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-npm run lint
-```
+(Equipo formado por Mario Bes, Alberto Riveiro y Daniel Segura)
