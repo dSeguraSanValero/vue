@@ -4,7 +4,8 @@
         <v-card>
           <v-card-item>
             <v-card-title>{{ company.name }}</v-card-title>
-            <v-card-subtitle>Número de colegiado: {{ company.foundationDate }}</v-card-subtitle>
+            <v-card-subtitle>Foundation Date: {{ company.foundationDate }}</v-card-subtitle>
+            <v-card-subtitle>Number of employees: {{ company.employeeCount }}</v-card-subtitle>
           </v-card-item>
         </v-card>
       </v-col>
