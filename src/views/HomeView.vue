@@ -1,9 +1,12 @@
 <template>
+
+    <h1><span class="mdi mdi-airplane"></span> Welcome to Flying Free <span class="mdi mdi-airplane"></span></h1>
+    <p class="sign-in">Sign In</p>
     <div>
-      <v-text-field v-model="email" label="Introduce tu email" variant="solo-filled"></v-text-field>
-      <v-text-field v-model="password" label="Introduce tu contraseña" type="password" variant="solo-filled"></v-text-field>
-      <v-btn variant="tonal" @click="submitCredentials">Iniciar sesión como fisioterapeuta</v-btn>
-      <div v-if="logError">¡Error la cuenta no existe!</div>
+      <v-text-field v-model="email" label="Submit your email" variant="solo-filled"></v-text-field>
+      <v-text-field v-model="password" label="Submit your password" type="password" variant="solo-filled"></v-text-field>
+      <v-btn variant="tonal" @click="submitCredentials">Sign In</v-btn>
+      <div v-if="logError">Error! The account does not exist!</div>
     </div>
 </template>
   
@@ -56,3 +59,7 @@ export default defineComponent({
     },
 });
 </script>
+
+<style lang="scss">
+    @import '../assets/main.scss'
+</style>

@@ -1,0 +1,51 @@
+@import './variables';
+@import './mixin';
+
+body {
+    color: $primary-color;
+}
+
+h1 {
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+}
+
+.sign-in {
+    @include center-text;
+}
+
+  
+.header {
+    width: 100%;
+    height: 60px;
+    background-color: #333;
+    color: white;
+    @include flex-center;
+}
+  
+.nav {
+    width: 100%;
+    max-width: 1200px; // Ajusta el ancho máximo según tus necesidades
+    @include flex-center;
+    justify-content: space-between;
+}
+  
+.nav__link {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    transition: background-color 0.3s, border-color 0.3s;
+  
+    &:hover {
+      background-color: #555;
+      border-color: white;
+    }
+  
+    .mdi {
+      margin-left: 5px;
+    }
+}
+  
