@@ -1,7 +1,9 @@
 <template>
     <p v-if="userData">¡Bienvenido {{ userData.name }}!</p>
 
-    <v-btn variant="outlined" @click="verReservas">Ver Reservas</v-btn>
+    <p v-if="userData">¡Tu Id es {{ userData.id }}!</p>
+
+    <v-btn variant="outlined" @click="verReservas()">Ver Reservas</v-btn>
 
     <v-row>
         <v-col cols="12" md="6" v-for="booking in bookings" :key="booking.bookingId">
@@ -40,9 +42,9 @@
         methods: {
             verReservas() {
                 const userStore = useUserStore();
-                const userId = userStore.userData?.Id;
+                const userId = userStore.userData?.id;
 
-                fetch(`http://localhost:7238/Treatment?patientId=${userId}`)
+                fetch(`http://localhost/Users/MyBookings?UserId=${userId}`)
                 .then(response => {
                 if (!response.ok) {
                     throw new Error('Network response was not ok');
